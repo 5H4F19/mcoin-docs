@@ -9,7 +9,7 @@ type ListProps = {
 const List = ({ data, className, renderItem, ...restProps }: ListProps) => {
     return (
         <div className={className} {...restProps}>
-            {data.map((item, index) => renderItem(item, index))}
+            {data?.map((item, index) => renderItem(item, index))}
         </div>
     );
 };

@@ -17,8 +17,20 @@ export const linked_card = [
   },
 ]
 
+export const linked_card_2 = [
+  {
+    icon: 'freepik',
+    title: 'Freepik',
+    link: 'https://nextjs.org'
+  },
+  {
+    icon: 'flaticon',
+    title: 'Flaticon',
+    link: 'https://tailwindcss.com/'
+  }
+]
+
 export const folder_info = [
-  ['pages', 'Documentation folder'],
   ['public', 'Static assets to be served'],
   ['src', 'Source folder'],
 ]
