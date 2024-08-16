@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("../assets/geist/Geist-UltraBlack.otf") format("opentype");
+  font-weight: 950;
+  font-style: normal;
+}
+
+body {
+  font-family: "Geist" !important;
+  background: #000 !important;
+}
+code .highlighted {
+  background-color: #2c2c30 !important;
+  border: 0;
+}
+/* Target code blocks */
+.nextra-content pre {
+  background-color: #18181b !important;
+  font-size: 16px;
+  font-family: "Geist", monospace !important;
+  border: #27272a 1px solid;
+  border-radius: 14px;
+}
+.nextra-code-block > div:first-child {
+  background-color: transparent !important;
+  color: #a0a0a0 !important; /* Optional: Change the text color */
+  padding: 0.5em 1em;
+  font-size: 14px;
+  border: #27272a 1px solid;
+  border-radius: 14px 14px 0 0;
+}

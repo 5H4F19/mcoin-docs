@@ -1,0 +1,102 @@
+import { LayersIcon } from "@radix-ui/react-icons";
+import {Heading,OptionTable,LinkedCards,folder_info,src_folder_info,file_tree_info,template_features} from "../components/docs/index.tsx";
+import { Tabs, Steps,Cards ,Card,FileTree} from "nextra/components";
+import {Link1Icon} from '@radix-ui/react-icons'
+
+
+<Heading title="Components" description="Create custom reusable components as well as install shadcn components." />
+
+---
+
+
+## Adding shadcn components
+
+<Steps>
+### Installation
+
+<Tabs items={["CLI","Manually"]}>
+    <Tabs.Tab>
+
+        ```bash copy
+        npx shadcn-ui@latest add checkbox
+          ```
+          
+    </Tabs.Tab>
+    <Tabs.Tab>
+
+        > To add manually you have to copy from [shadcn](https://ui.shadcn.com/docs/components/checkbox)
+
+    </Tabs.Tab>
+</Tabs>
+
+
+### Usage
+
+```typescript copy
+import { Checkbox } from "@/components/ui/checkbox"
+```
+
+```typescript copy
+<Checkbox />
+```
+> Please visit the official Shadcn website to explore more available components you can use. [shadcn](https://ui.shadcn.com/docs)
+
+</Steps>
+
+## Customizing styles
+
+### Globally
+```css copy
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 72.22% 50.59%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5% 64.9%;
+    --radius: 0.5rem;
+  }
+}
+```
+> You can customize the variables to customize the styles for all the available components.
+
+### Individually
+
+***`@/components/ui/badge.tsx`***
+
+```typescript copy
+const badgeVariants = cva(
+  "inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+  {
+    variants: {
+      variant: {
+        default:
+          "border-transparent bg-green-400/20 text-green-600 shadow hover:bg-primary/80",
+        secondary:
+          "border-transparent bg-orange-400/20 text-orange-600 shadow hover:bg-secondary/80",
+        destructive:
+          "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80",
+        outline: "text-foreground bg-black rounded-full text-md px-10 py-1",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
+)
+```
+> You can use tailiwncss to customize styles for components.

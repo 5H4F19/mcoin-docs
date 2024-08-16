@@ -1,0 +1,76 @@
+import { LayersIcon } from "@radix-ui/react-icons";
+import {Heading,OptionTable,LinkedCards,folder_info,src_folder_info,file_tree_info,template_features} from "../components/docs/index.tsx";
+import { Tabs, Steps,Cards ,Card,FileTree} from "nextra/components";
+import {Link1Icon} from '@radix-ui/react-icons'
+
+
+<Heading title="Conventions" description="This sections describes the file or folder management we used." />
+
+---
+
+
+## Assets
+
+<Steps>
+### Add a graphics
+Add a graphics in the `images` folder
+<FileTree>
+  <FileTree.Folder name="src" defaultOpen>
+    <FileTree.Folder name="assets" defaultOpen>
+        <FileTree.Folder name="images"/>
+    </FileTree.Folder>
+    </FileTree.Folder>
+</FileTree>
+To enable theming, naming convention should be `<graphics_name>_<theme_name>.svg`
+
+
+### Update `assets.tsx`
+***`src/assets/images/assets.tsx`***
+
+```typescript copy
+import Graphics_orange from '@/assets/images/<folder>/graphics_orange.svg'
+import Graphics_cyan from '@/assets/images/<folder>/graphics_cyan.svg'
+import Graphics_cyan from '@/assets/images/<folder>/graphics_cyan.svg'
+```
+
+```typescript {4,8,12} copy
+export const assets: Assets = {
+  orange: {
+    // ...
+    graphics: Graphics_orange,
+  },
+  cyan: {
+    // ...
+    graphics: Graphics_cyan,
+  },
+  purple: {
+    // ...
+    graphics: purple,
+  },
+}
+```
+### Usage
+```typescript copy
+import { useAppContext } from "@/context";
+import { getImage } from "@/assets/images/assets";
+```
+```typescript copy
+const { theme } = useAppContext();
+```
+
+```typescript {8} copy
+export const Demo:React.FC<> = () => {
+  const { theme } = useAppContext();
+  return (
+    <div>
+      <Image
+        height={50}
+        width={50}
+        src={getImage("graphics", theme)}
+        alt="Technology"
+      />
+    </div>
+  );
+};
+```
+</Steps>

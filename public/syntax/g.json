@@ -1,0 +1,225 @@
+{
+  "name": "Vesper",
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#8b8b8b94"
+      }
+    },
+    {
+      "name": "Keyword and Storage",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": [
+        "variable",
+        "variable.parameter",
+        "variable.language",
+        "variable.other",
+        "variable.other.local",
+        "variable.other.readwrite",
+        "variable.other.local",
+        "variable.other.global"
+      ],
+      "settings": {
+        "foreground": "#FFF"
+      }
+    },
+    {
+      "name": "Type and Function",
+      "scope": [
+        "entity.name.type",
+        "entity.name.function",
+        "support.function",
+        "keyword.other.special-method"
+      ],
+      "settings": {
+        "foreground": "#FFF"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string",
+        "string.quoted",
+        "string.quoted.double",
+        "string.quoted.single",
+        "string.interpolation"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "Brackets and Punctuation",
+      "scope": [
+        "punctuation.definition.brackets",
+        "punctuation.definition.parenthesis",
+        "punctuation.definition.brace",
+        "keyword.operator",
+        "punctuation.separator",
+        "punctuation",
+        "punctuation.definition",
+        "punctuation.section",
+        "constant.language",
+        "constant.numeric",
+        "constant.character",
+        "constant.other"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "Tag",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag",
+        "meta.tag.html",
+        "markup.element",
+        "markup.tag",
+        "markup.tag.any",
+        "punctuation.definition.tag",
+        "punctuation.definition.tag.begin",
+        "punctuation.definition.tag.end"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "Attribute Name",
+      "scope": [
+        "entity.other.attribute-name"
+      ],
+      "settings": {
+        "foreground": "#FFF"
+      }
+    },
+    {
+      "name": "Attribute Value",
+      "scope": [
+        "string.attribute",
+        "string.quoted.double.html",
+        "string.quoted.single.html"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "JSON Key",
+      "scope": [
+        "source.json meta.structure.dictionary.json support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#FFF"
+      }
+    },
+    {
+      "name": "JSON Value and String",
+      "scope": [
+        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json",
+        "source.json string"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "JSON Number",
+      "scope": [
+        "source.json constant.numeric"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "JSON Punctuation",
+      "scope": [
+        "source.json punctuation"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "Symbols",
+      "scope": [
+        "constant.other.symbol",
+        "constant.other.key",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "Operator and Misc",
+      "scope": [
+        "keyword.control",
+        "constant.other.color",
+        "punctuation.separator.inheritance.php",
+        "punctuation.definition.tag.html",
+        "punctuation.section.embedded",
+        "keyword.other.template",
+        "keyword.other.substitution",
+        "keyword.operator"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    },
+    {
+      "name": "Bash Command",
+      "scope": "source.shell keyword.command.shell",
+      "settings": {
+        "foreground": "#00daef"
+      }
+    },
+    {
+      "name": "Bash Variable",
+      "scope": "source.shell variable.other.local.shell",
+      "settings": {
+        "foreground": "#00daef"
+      }
+    },
+    {
+      "name": "Shell Command",
+      "scope": "source.shell keyword",
+      "settings": {
+        "foreground": "#00daef"
+      }
+    },
+    {
+      "name": "Support",
+      "scope": [
+        "entity.name",
+        "support.type",
+        "support.class",
+        "support.other.namespace.use.php",
+        "meta.use.php",
+        "support.other.namespace.php",
+        "markup.changed.git_gutter",
+        "support.type.sys-types"
+      ],
+      "settings": {
+        "foreground": "#A0A0A0"
+      }
+    }
+  ]
+}

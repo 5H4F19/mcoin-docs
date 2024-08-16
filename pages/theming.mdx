@@ -1,0 +1,79 @@
+import { LayersIcon } from "@radix-ui/react-icons";
+import {Heading,OptionTable,LinkedCards,folder_info,src_folder_info,file_tree_info,template_features} from "../components/docs/index.tsx";
+import { Tabs, Steps,Cards ,Card,FileTree} from "nextra/components";
+import {Link1Icon} from '@radix-ui/react-icons'
+
+
+<Heading title="Theming" description="Using CSS Variables or Tailwind CSS for theming." />
+
+---
+
+
+<Steps>
+
+### Create a new css class
+
+```css copy
+.newton {
+    --grad-l0: 181, 145, 207;
+    --grad-r0: 165, 76, 161;
+    --grad-l1: 181, 145, 207;
+    --grad-r1: 165, 76, 161;
+    --grad-l2: 181, 145, 207;
+    --grad-r2: 165, 76, 161;
+    --grad-l3: 181, 145, 207;
+    --grad-r3: 165, 76, 161;
+    --grad-l4: 181, 145, 207;
+    --grad-r4: 165, 76, 161;
+    --grad-l5: 181, 145, 207;
+    --grad-r5: 165, 76, 161;
+    --grad-l6: 181, 145, 207;
+    --grad-r6: 165, 76, 161;
+  }
+```
+
+
+### Update `global.css`
+
+
+```css copy
+@layer base {
+    /* ... */
+  .newton {
+    --grad-l0: 78, 228, 182;
+    --grad-r0: 120, 201, 242;
+    --grad-l1: 78, 228, 182;
+    --grad-r1: 120, 201, 242;
+    --grad-l2: 78, 228, 182;
+    --grad-r2: 120, 201, 242;
+    --grad-l3: 78, 228, 182;
+    --grad-r3: 120, 201, 242;
+    --grad-l4: 78, 228, 182;
+    --grad-r4: 120, 201, 242;
+    --grad-l5: 78, 228, 182;
+    --grad-r5: 120, 201, 242;
+    --grad-l6: 78, 228, 182;
+    --grad-r6: 120, 201, 242;
+  }
+  /* ... */
+}
+```
+
+### Update `context/index.tsx`
+
+```typescript {5} copy
+export enum Theme {
+  orange = "orange",
+  cyan = "cyan",
+  purple = "purple",
+  newton = "newton"
+}
+```
+> The enumeration value should match with css class name.
+
+</Steps>
+
+
+### Graphics themeing
+
+To learn about graphics theming refer to the section [`conventions`](/docs/conventions)

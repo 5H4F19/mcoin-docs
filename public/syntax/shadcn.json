@@ -1,0 +1,273 @@
+{
+  "name": "Shadcn",
+  "colors": {
+    "editor.background": "#101010",
+    "editor.foreground": "#FF8080",
+    "editor.selectionBackground": "#2A2A2A",
+    "editor.selectionHighlightBackground": "#2A2A2A",
+    "editorLineNumber.foreground": "#FF8080",
+    "editorGroupHeader.tabsBackground": "#101010",
+    "editorWidget.background": "#101010",
+    "editorWarning.foreground": "#FF8080",
+    "editorError.foreground": "#FF8080",
+    "editorOverviewRuler.border": "#101010",
+    "editorGutter.addedBackground": "#FF8080",
+    "editorGutter.deletedBackground": "#FF8080",
+    "editorGutter.modifiedBackground": "#FF8080",
+    "diffEditor.insertedTextBackground": "#2A2A2A15",
+    "diffEditor.insertedLineBackground": "#2A2A2A15",
+    "diffEditor.removedTextBackground": "#2A2A2A15",
+    "diffEditor.removedLineBackground": "#2A2A2A15",
+    "editorInlayHint.foreground": "#FF8080",
+    "editorInlayHint.background": "#1C1C1C",
+    "sideBar.background": "#101010",
+    "sideBarTitle.foreground": "#FF8080",
+    "sideBarSectionHeader.foreground": "#FF8080",
+    "sideBarSectionHeader.background": "#101010",
+    "activityBar.background": "#101010",
+    "activityBar.foreground": "#FF8080",
+    "activityBarBadge.background": "#FF8080",
+    "activityBarBadge.foreground": "#101010",
+    "titleBar.activeBackground": "#101010",
+    "titleBar.inactiveBackground": "#101010",
+    "titleBar.activeForeground": "#FF8080",
+    "titleBar.inactiveForeground": "#FF8080",
+    "tab.border": "#101010",
+    "tab.activeBackground": "#161616",
+    "tab.inactiveBackground": "#101010",
+    "statusBar.debuggingForeground": "#FF8080",
+    "statusBar.debuggingBackground": "#FF8080",
+    "statusBar.background": "#101010",
+    "statusBar.foreground": "#FF8080",
+    "statusBarItem.remoteBackground": "#FF8080",
+    "statusBarItem.remoteForeground": "#101010",
+    "list.activeSelectionForeground": "#FF8080",
+    "list.inactiveSelectionBackground": "#2A2A2A",
+    "badge.background": "#FF8080",
+    "badge.foreground": "#101010",
+    "button.background": "#FF8080",
+    "button.hoverBackground": "#B0B0B0",
+    "button.foreground": "#101010",
+    "focusBorder": "#FF8080",
+    "icon.foreground": "#FF8080",
+    "input.background": "#1C1C1C",
+    "list.activeSelectionBackground": "#2A2A2A",
+    "list.hoverBackground": "#3A3A3A",
+    "list.errorForeground": "#FF8080",
+    "list.highlightForeground": "#FF8080",
+    "selection.background": "#666",
+    "editorBracketHighlight.foreground1": "#FF8080",
+    "editorBracketHighlight.foreground2": "#FF8080",
+    "editorBracketHighlight.foreground3": "#FF8080",
+    "editorBracketHighlight.foreground4": "#FF8080",
+    "editorBracketHighlight.foreground5": "#FF8080",
+    "editorBracketHighlight.foreground6": "#FF8080",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#FF8080",
+    "textLink.foreground": "#FF8080",
+    "textLink.activeForeground": "#FF8080",
+    "editorHoverWidget.background": "#161616",
+    "editorHoverWidget.border": "#282828",
+    "scrollbarSlider.background": "#34343480",
+    "scrollbarSlider.hoverBackground": "#343434",
+    "settings.modifiedItemIndicator": "#FF8080"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": [
+        "comment",
+        "punctuation.definition.comment"
+      ],
+      "settings": {
+        "foreground": "#FF8080",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Variables",
+      "scope": [
+        "variable",
+        "string constant.other.placeholder",
+        "entity.name.tag"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Colors",
+      "scope": [
+        "constant.other.color"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": [
+        "invalid",
+        "invalid.illegal"
+      ],
+      "settings": {
+        "foreground": "#FF8080",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Keyword, Storage",
+      "scope": [
+        "keyword",
+        "storage.type",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Operator, Misc",
+      "scope": [
+        "keyword.control",
+        "constant.other.color",
+        "punctuation.definition.tag",
+        "punctuation.separator.inheritance.php",
+        "punctuation.definition.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.section.embedded",
+        "keyword.other.template",
+        "keyword.other.substitution"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Tag",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag.sgml",
+        "markup.deleted.git_gutter"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Function, Special Method",
+      "scope": [
+        "entity.name.function",
+        "variable.function",
+        "support.function",
+        "keyword.other.special-method"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Block Level Variables",
+      "scope": [
+        "meta.block variable.other"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Other Variable, String Link",
+      "scope": [
+        "support.other.variable",
+        "string.other.link"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+      "scope": [
+        "constant.numeric",
+        "support.constant",
+        "constant.character",
+        "constant.escape",
+        "keyword.other.unit",
+        "keyword.other",
+        "constant.language.boolean"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "String, Symbols, Inherited Class",
+      "scope": [
+        "string",
+        "constant.other.symbol",
+        "constant.other.key",
+        "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Class, Support",
+      "scope": [
+        "entity.name",
+        "support.type",
+        "support.class",
+        "support.other.namespace.use.php",
+        "meta.use.php",
+        "support.other.namespace.php",
+        "markup.changed.git_gutter",
+        "support.type.sys-types"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "CSS Class and Support",
+      "scope": [
+        "source.css support.type.property-name",
+        "source.sass support.type.property-name",
+        "source.scss support.type.property-name",
+        "source.less support.type.property-name",
+        "source.stylus support.type.property-name",
+        "source.postcss support.type.property-name",
+        "support.type.vendored.property-name.css",
+        "source.css.scss entity.name.tag",
+        "variable.parameter.keyframe-list.css",
+        "meta.property-name.css",
+        "variable.parameter.url.scss",
+        "meta.property-value.scss",
+        "meta.property-value.css"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Sub-methods",
+      "scope": [
+        "entity.name.module.js",
+        "variable.import.parameter.js",
+        "variable.other.class.js"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    },
+    {
+      "name": "Language methods",
+      "scope": [
+        "variable.language"
+      ],
+      "settings": {
+        "foreground": "#FF8080"
+      }
+    }
+  ]
+}
