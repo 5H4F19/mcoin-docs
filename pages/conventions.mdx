@@ -1,5 +1,5 @@
 import { LayersIcon } from "@radix-ui/react-icons";
-import {Heading,OptionTable,LinkedCards,folder_info,src_folder_info,file_tree_info,template_features} from "../../components/docs/index.tsx";
+import {Heading,OptionTable,LinkedCards,folder_info,src_folder_info,file_tree_info,template_features} from "../components/docs/index.tsx";
 import { Tabs, Steps,Cards ,Card,FileTree} from "nextra/components";
 import {Link1Icon} from '@radix-ui/react-icons'
 
@@ -72,5 +72,64 @@ export const Demo:React.FC<> = () => {
     </div>
   );
 };
+```
+</Steps>
+
+
+
+
+
+## Data
+
+<Steps>
+### Add new data object
+Add a data object in the ***`@/lib/data.tsx`*** file
+<FileTree>
+  <FileTree.Folder name="src" defaultOpen>
+    <FileTree.Folder name="app" defaultOpen>
+        <FileTree.Folder name="lib" defaultOpen>
+            <FileTree.File name="data.tsx"/>
+    </FileTree.Folder>
+    </FileTree.Folder>
+    </FileTree.Folder>
+</FileTree>
+
+``` typescript copy
+const new_info = {
+    //
+}
+```
+
+
+### Add data object definition
+***`src/app/lib/definitions.ts`***
+
+```typescript copy
+type New_info_props = {
+    //
+}
+```
+
+```typescript copy
+import { New_info_props } from './definitions'
+```
+
+``` typescript copy
+const new_info:New_info_props = {
+    //
+}
+```
+
+
+### Usage
+```typescript copy
+import { new_info } from "@/lib/data";
+```
+
+```typescript {2} copy
+<List
+    data={new_info}
+    renderItem={item => <Item /> }
+/>
 ```
 </Steps>
