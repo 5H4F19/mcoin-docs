@@ -21,12 +21,12 @@ export const linked_card_2 = [
   {
     icon: 'freepik',
     title: 'Freepik',
-    link: 'https://nextjs.org'
+    link: 'https://freepik.com'
   },
   {
     icon: 'flaticon',
     title: 'Flaticon',
-    link: 'https://tailwindcss.com/'
+    link: 'https://flaticon.com/'
   }
 ]
 

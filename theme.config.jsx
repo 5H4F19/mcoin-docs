@@ -1,6 +1,6 @@
 export default {
   project: {
-    link: "https://github.com/shuding/nextra",
+    link: "https://github.com/5H4F19/mcoin-docs",
   },
   darkMode: false,
   nextThemes: {
@@ -8,7 +8,7 @@ export default {
   },
   useNextSeoProps: ()=>{
     return {
-       titleTemplate: '%s – Multicone.io'
+       titleTemplate: '%s – Multicone'
     }
   },
   primaryHue:214,
@@ -47,7 +47,7 @@ export default {
         <div className="">
           <span>
             MIT {new Date().getFullYear()} ©{" "}
-            <a href="https://multicone.io" target="_blank">
+            <a href="https://multicone.tech" target="_blank">
               Multicone
             </a>
             .
